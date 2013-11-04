@@ -16,6 +16,9 @@ Justin Santa Barbara (4):
 Manfred Touron (1):
       fixed st_size=0 for opened files
 
+Marco (1):
+      Added spec file to create RPMs
+
 Max Stepanov (1):
       Fix directory caching memory leak.
 
