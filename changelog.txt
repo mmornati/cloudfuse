@@ -1,0 +1,138 @@
+Chris Wedgwood (1):
+      Implement block counts in stat (so du and other tools work correctly).     Use 4K blocks as the basis for this.
+
+David Brownlee (1):
+      Only include <alloca.h> for Linux (Certainly not for NetBSD)
+
+Dillon Amburgey (1):
+      Clean up C code, remove nested functions
+
+Justin Santa Barbara (4):
+      Added .gitignore file
+      Support for Keystone authentication
+      Use prefix, so that we can recurse without marker directory objects
+      Warn if we get multiple services or tokens from keystone
+
+Manfred Touron (1):
+      fixed st_size=0 for opened files
+
+Max Stepanov (1):
+      Fix directory caching memory leak.
+
+Michael Barton (45):
+      first commit
+      Removed reliance on glibc printf extensions
+      Added tests
+      Removed malloc.h include
+      Set uid and gid of files to running user
+      Stuff to make it work on macfuse
+      extra config options
+      Updated bugs/shortcomings
+      more fixes as a result of macfuse
+      Fix re-try after re-auth
+      Refactoring and improved config file finding
+      Use XML listing for root
+      Refactoring and perm checking bug
+      Re-bootstrapped
+      Fix auto-reconnect and authurl config
+      fix for 64-bit
+      Merge pull request #19 from ncw/rename
+      Merge pull request #14 from dillona/master
+      Merge pull request #23 from novas0x2a/master
+      Merge pull request #26 from abs0/556b8873
+      Merge pull request #39 from maxstepanov/patch-1
+      Merge pull request #35 from justinsb/add_gitignore
+      Merge pull request #34 from moul/master
+      Merge pull request #36 from justinsb/openstack_support
+      suppress repeated directories due to subdir
+      suppress ftruncate compiler warning
+      README build packages for centos
+      update contributors
+      ssl verification by default, option to disable
+      add verify_ssl to readme
+      fix cloudfuse on rhel-like systems
+      ssl verification setting was broken
+      refactor initialization code
+      remove VERIFYPEER setting
+      consolidate the curl option setting code
+      gross workaround for broken libcurl in rhel 5
+      give command line options priority over .cloudfuse
+      namespace all api functions
+      hopefully better rhel 5 mode
+      better rhel 6 fix
+      rhel5 mode cleanup
+      more rhel5 mode cleanup
+      remove use_openstack setting
+      major refactor of authentication code
+      increase header size for PKI tokens
+
+Mike Barton (56):
+      snet and libmagic
+      small fixes
+      MAGIC_MIME is more portable than MAGIC_MIME_TYPE
+      determine mimetype by extension
+      fix build problem
+      updated auth URL
+      one bug fix and better debugging
+      fix a bug with mtime on new files
+      improved build scripts
+      get rid of compiler warnings
+      remove timeout, use Expect: headers
+      refactoring and cleanup for future features
+      moderately less broken truncate
+      fix for crash on reconnect
+      more stable reconnect
+      remove libmagic dependency
+      build cleanup
+      create installation dir if it doesn't exist
+      remove unused variables
+      remove ftruncate warnings on newer gcc
+      fix 32-bit compilation
+      another 32-bit fix
+      fix a ftruncate bug
+      use pkg-config for libcurl and fuse
+      unused variables in makefile
+      build cleanup
+      doc change
+      build cleanup
+      allow makefile to define offset bits
+      remove unused code
+      fix re-auth
+      change fprintf to debugf
+      integer type cleanup
+      allow config options to be given as mount options
+      left in debugging printf
+      fix option parsing
+      Now with thread safety!
+      README updates
+      configure.in additions recommended by autoscan
+      rearrange configure.in
+      remove gnutls dep, add libssl req do README
+      fix sscanf on some OSes
+      ubuntu/debian package list in README
+      mistaken change to configure.in
+      refactor option parsing
+      better configure openssl detection, and fallback on single-threaded
+      lock mutex around login
+      clear xml context correctly on 401
+      change how xml context is reset on re-auth
+      improve retry logic, fix multithreading problems
+      don't verify peer on auth.. TODO: make that an option
+      even unsafer ssl options...
+      add contributors to README
+      protect directories from rename
+      arrange code back to my preference ;)
+      parse size with strtoll (Joseph Dunn)
+
+Mike Lundy (4):
+      remove deprecated, unneeded include
+      add openssl to the configure discovery
+      regenerate configure
+      make Makefile obey DESTDIR
+
+Nick Craig-Wood (1):
+      Implement rename using the Copy object functionality
+
+Tim Dysinger (1):
+      spelling error
+

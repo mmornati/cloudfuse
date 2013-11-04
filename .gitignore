@@ -10,3 +10,7 @@ cloudfuse
 # Ignore Eclipse files
 .cproject
 .project
+
+#Ignore built
+dist
+rpm-build
